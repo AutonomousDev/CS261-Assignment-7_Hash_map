@@ -1,7 +1,7 @@
 # Name: Cameron Bowers
 # OSU Email: bowercam@oregonstate.edu
 # Course: CS261 - Data Structures
-# Assignment: 6
+# Assignment: 7
 # Due Date: 11/25/2021
 # Description: The program is a hash map.
 
