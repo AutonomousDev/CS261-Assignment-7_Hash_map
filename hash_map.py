@@ -66,7 +66,7 @@ class HashMap:
 
     def get(self, key: str) -> object:
         """
-        TODO: Write this implementation
+        This method returns the value for the key inputted
         """
         my_index = self.hash_function(key) % self.capacity
         node = self.buckets.get_at_index(my_index).contains(key)
@@ -76,7 +76,7 @@ class HashMap:
 
     def put(self, key: str, value: object) -> None:
         """
-        This method puts a key/value into the linked list.
+        This method puts a key/value into the linked list at the correct index.
         """
         my_index = self.hash_function(key) % self.capacity
         node = self.buckets.get_at_index(my_index).contains(key)
@@ -148,7 +148,7 @@ class HashMap:
 
     def get_keys(self) -> DynamicArray:
         """
-        TODO: Write this implementation
+        This method returns an unordered DynamicArray that contains all keys stored in your hash map
         """
         da = DynamicArray()
 
