@@ -61,8 +61,10 @@ class HashMap:
         """
         Clears the data
         """
-        self.__init__(self.capacity, self.hash_function)
-
+        self.size = 0
+        self.buckets = DynamicArray()
+        for i in range(self.capacity):
+            self.buckets.append(LinkedList())
 
     def get(self, key: str) -> object:
         """
@@ -95,8 +97,6 @@ class HashMap:
         result = self.buckets.get_at_index(my_index).remove(key)
         if result:
             self.size -= 1
-
-
 
     def contains_key(self, key: str) -> bool:
         """
@@ -143,8 +143,6 @@ class HashMap:
         self.__init__(temp_table.capacity, temp_table.hash_function)
         self.buckets = temp_table.buckets
         self.size = temp_table.size
-
-
 
     def get_keys(self) -> DynamicArray:
         """
