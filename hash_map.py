@@ -1,5 +1,5 @@
 # Name: Cameron Bowers
-# OSU Email: bowercam@oregonstate.edu
+# OSU Email: Removed
 # Course: CS261 - Data Structures
 # Assignment: 7
 # Due Date: 11/25/2021
